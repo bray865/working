@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracion y Mantenimiento</title>
+    <style>
+
+      body {
+          font-family: Arial, sans-serif;
+          background: url(Images/fundamentos-red-1280x720.jpg) no-repeat center center fixed;
+          background-size: cover;
+          text-align: justify;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+      }
+
+      h2 {
+          color: hsl(150, 98%, 52%);
+      }
+
+      h1 {
+          color: #f90202;
+      }
+
+      p {
+          color: #000000;
+      }
+
+      .content h1,
+      .content h2 {
+          color: black;
+          /* Color del texto: negro */
+          text-align: center;
+          /* Centrar texto */
+      }
+      .div{
+          color: #000000;
+      }
+
+      #header {
+          background-color: transparent;
+          /* Fondo semitransparente para mejorar la visibilidad del encabezado */
+          color: rgb(17, 17, 17);
+          text-align: justify;
+          padding: 20px;
+      }
+     
+      .content {
+          padding: 2% 5%;
+          margin: 2% auto;
+          background-color: transparent;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          line-height: 1.66;
+      }
+
+      .section {
+          padding: 2% 0;
+          margin-bottom: 2%;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 0 5px #1a1919;
+      }
+      .content, .section {
+        max-width: 100%;
+        }
+
+      .section h2 {
+          color: #333;
+      }
+
+      .section p {
+          color: black;
+      }
+
+      .contact {
+          background-color: #34a9db;
+          color: white;
+      }
+
+      .contact a {
+          color: #ffffff;
+          text-decoration: underline;
+      }
+
+      .contact a:hover {
+          text-decoration: none;
+      }
+
+      footer {
+          background-color: #ec0a0a;
+          color: #fff;
+          text-align: center;
+          padding: 10px 0;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+
+/* Estilos para imágenes */
+.custom-image {
+    width: 80%; /* 80% del ancho de la ventana */
+    max-width: 800px; /* Máximo de 800px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilos para el video */
+.custom-video {
+    width: 100%; /* 100% del ancho de la ventana */
+    max-width: 1000px; /* Máximo de 1000px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+
+      .minimize-button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          padding: 5px 10px;
+          cursor: pointer;
+          display: none;
+          .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #3498db;
+          padding: 10px;
+          color: white;
+      }
+      }
+
+      .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      padding: 5px; /* Ajusta el valor del padding según sea necesario */
+      color: rgb(2, 2, 2);
+      }
+
+     .menu-icon {
+     font-size: 24px;
+     cursor:none;
+     padding: 0px; /* Eliminar relleno */
+     margin: 0; /* Eliminar margen */
+     }
+     
+      #nav {
+          display: none;
+          background-color: #48f01a;
+          padding: 0;
+      }
+
+      #nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      #nav a {
+          display: block;
+          color: rgb(26, 25, 25);
+          text-decoration: none;
+          padding: 10px;
+          margin: 0;
+      }
+
+      #nav a:hover {
+          background-color: #2980b9;
+      }
+
+      /* Estilos para escritorio */
+      @media (min-width: 768px) {
+          .top {
+              display: block;
+              text-align: center;
+          }
+
+          #nav {
+              display: block;
+              margin-top: 20px;
+          }
+
+          #nav ul {
+              display: flex;
+              justify-content: center;
+          }
+
+          #nav li {
+              margin: 0 10px;
+          }
+      }
+  </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="top">
+          <h1>Configuracion y Mantenimiento</h1>
+            <div class="menu-icon" onclick="toggleMenu()">☰ Menu</div>
+        </div>
+    <nav id="nav">
+      <ul>
+          <a href="index.html">Inicio</a>
+          <a href="#Configuracion-de-enrutador-y-conmutador">Configuracion de enrutador y conmutador</a>
+          <a href="#Resolución-de-problemas ">Resolución de problemas</a>
+          <a href="#Seguridad-de-redes">Seguridad de redes</a>
+      </ul>
+     </nav>
+     
+    </div>
+ 
+    <div class="content">
+        <div class="section">
+            <h1>Configuracion y Mantenimiento</h1>
+            <p>
+              La configuración y el mantenimiento de las redes de computadoras son aspectos fundamentales para garantizar un funcionamiento óptimo y seguro de los sistemas informáticos. Aquí hay algunos puntos clave a tener en cuenta:       
+            </p> 
+            <li><strong>Configuración de dispositivos de red:</strong>Esto implica la configuración adecuada de enrutadores, conmutadores, firewalls y otros dispositivos de red. Es importante asignar direcciones IP, establecer protocolos de comunicación y asegurarse de que los dispositivos estén correctamente conectados.</li>
+            <li><strong>Seguridad de la red:</strong>Implementar medidas de seguridad como firewalls, sistemas de detección de intrusiones y políticas de acceso para proteger la red contra amenazas externas e internas. También es importante mantener los dispositivos y software actualizados para mitigar vulnerabilidades.</li>
+            <li><strong>Gestión de usuarios y permisos:</strong>Establecer políticas de acceso a la red y asignar permisos a los usuarios según sus roles y responsabilidades. Esto ayuda a proteger los datos y recursos de la red y evita accesos no autorizados.</li>
+            <li><strong>Monitorización y resolución de problemas:</strong>Supervisar constantemente el rendimiento de la red y utilizar herramientas de monitorización para identificar posibles problemas. Si se produce algún problema, es importante diagnosticarlo rápidamente y tomar medidas para resolverlo.</li>
+            <li><strong>Monitorización y resolución de problemas:</strong>Mantener al día los dispositivos de red y el software utilizado en la red mediante la instalación regular de actualizaciones y parches. Esto ayuda a corregir errores, mejorar la funcionalidad y cerrar posibles brechas de seguridad.</li>
+        </div>
+     </div>
+     <div style="text-align: center;">
+
+      <img src="/Images/images (1).jpg" class="custom-image" >
+     </div>
+            <div class="content">
+              <div class="section">
+                <h2 id="Configuracion-de-enrutador-y-conmutador">Configuracion de enrutador y conmutador</h2>
+
+                <p>
+                  Los enrutadores y conmutadores son dispositivos cruciales en las redes de comunicación. Un enrutador dirige paquetes de datos entre redes, utilizando tablas de enrutamiento para encontrar la mejor ruta.    
+                </p>  
+                <li><strong>Red informatica:</strong>Una red informática es un conjunto de dispositivos interconectados entre sí a través de un medio, que intercambian información y comparten recursos </li>
+                <li><strong>enrutador:</strong>Un enrutador dirige paquetes de datos entre redes, utilizando tablas de enrutamiento para encontrar la mejor ruta</li>
+                <li><strong>Conmutador:</strong>un conmutador conecta dispositivos en una red local y asegura que los datos lleguen a su destino dentro de esta red. </li>
+                <li><strong>Importancia:</strong> son esenciales para el funcionamiento eficaz de una red, permitiendo la comunicación entre redes y dentro de una red local. La configuración incluye establecer direcciones IP, puertas de enlace, seguridad y servicios necesarios para su operación óptima. Una configuración adecuada garantiza una red funcional y segura.</li>
+                <p>
+                  La configuración de enrutadores y conmutadores en redes de computadoras es un proceso fundamental para asegurar el correcto funcionamiento de la red. Aquí hay algunos pasos básicos que puedes seguir para configurarlos:
+                </p>
+
+                <li><strong>Conectividad física:</strong>Asegúrese de que los enrutadores y conmutadores estén correctamente conectados a la red, tanto a nivel físico como a través de cables o conexiones inalámbricas.</li>
+                <li><strong>Configuración de IP:</strong>Asigne direcciones IP únicas a cada uno de los dispositivos en la red. Puedes hacer esto manualmente o utilizar un protocolo como DHCP para asignar automáticamente las direcciones IP.</li>
+                <li><strong>Configuración del enrutador:</strong>Defina la tabla de enrutamiento en el enrutador para asegurar que los paquetes de datos se envíen correctamente entre diferentes redes. Configure las interfaces de red y las rutas estáticas o dinámicas según sea necesario</li>
+                <li><strong>Configuración del conmutador:</strong>Defina las VLAN en el conmutador si es necesario segmentar la red. Configura los puertos para permitir o bloquear el tráfico según tus necesidades. También puedes configurar opciones de seguridad como el control de acceso basado en puertos o el control de tormentas de broadcast.</li>
+                <li><strong>Seguridad:</strong>Configure contraseñas de administración en los dispositivos para protegerlos de accesos no autorizados. También puede habilitar funciones de seguridad como listas de control de acceso para filtrar el tráfico entrante y saliente.</li>
+                <li><strong>Monitoreo y mantenimiento:</strong>Configura herramientas de monitoreo y registro para supervisar el rendimiento de la red. Realice actualizaciones de firmware y configure respaldos regulares de la configuración para evitar la pérdida de datos en caso de fallas.</li>
+              </div>
+            </div>  
+       </div>
+       <div style="text-align: center;">
+        <img src="/Images/descarga.png" class="custom-image" >
+       </div>
+        <div class="content">
+          <div class="section">
+            <h2 id="Resolución-de-problemas">Resolución de problemas</h2>
+            <p>
+              La resolución de problemas en redes de computadoras es un proceso fundamental para mantener el funcionamiento y la eficiencia de una red. Aquí hay algunos pasos que puedes seguir para resolver problemas en redes de computadoras:
+            </p>
+            <li><strong>Identificar el problema:</strong> Lo primero que debes hacer es identificar el problema específico que estás experimentando en la red. Puede ser una conexión lenta, pérdida de paquetes, incapacidad para acceder a ciertos recursos, etc.</li>
+            <li><strong>Recopilar información:</strong> Reúne toda la información relevante sobre la red y el problema en cuestión. Esto puede incluir direcciones IP, configuraciones de red, registros de eventos, etc.</li>
+            <li><strong>Analizar la causa raíz:</strong>Examina detenidamente la información recopilada para determinar la causa raíz del problema. Esto puede implicar verificar las configuraciones de los dispositivos de red, realizar pruebas de conectividad, revisar los registros de eventos, etc.</li>
+            <li><strong>Realizar pruebas de diagnóstico:</strong>Utiliza herramientas de diagnóstico de red para realizar pruebas y verificar diferentes aspectos de la red, como la conectividad, el ancho de banda, la latencia, etc. Estas pruebas te ayudarán a identificar posibles puntos problemáticos.</li>
+            <li><strong>Aplicar soluciones:</strong> Una vez que hayas identificado la causa raíz del problema, aplica las soluciones adecuadas. Esto puede implicar ajustar las configuraciones de los dispositivos de red, actualizar firmware o controladores, reemplazar componentes defectuosos, etc.</li>
+            <li><strong>Verificar la solución:</strong>Después de aplicar las soluciones, verifica si el problema se ha resuelto. Realiza pruebas adicionales para asegurarte de que la red esté funcionando correctamente.</li>
+            <li><strong>Documentar y aprender:</strong>Es importante documentar todas las acciones tomadas durante el proceso de resolución de problemas. Esto ayudará a tener un registro de las soluciones aplicadas y servirá como referencia para futuros problemas similares. Además, es importante aprender de cada problema resuelto para mejorar tus habilidades en la resolución de problemas.</li>
+          </div>
+        </div>
+        
+        <div style="text-align: center;">
+          <video controls class="custom-video">
+              <source src="/video/Identificación de fallas y anomalías en la red.mp4">
+          </video>
+      </div>
+        <div class="content">
+          <div class="section">
+            <h2 id="Seguridad-de-redes">Seguridad de redes</h2>
+            <p>
+                Una topología de red es la estructura física o lógica mediante la cual los dispositivos de una red están interconectados. Representa la forma en que los nodos están organizados y conectados para permitir la comunicación de dato.
+            </p>      
+            <ul>
+              <p>
+                La seguridad de redes es un aspecto crítico en el diseño, configuración y mantenimiento de cualquier infraestructura de red. Asegurar la integridad, confidencialidad y disponibilidad de los datos es fundamental para proteger la información y garantizar un funcionamiento seguro de la red.
+              </p>  
+              <p>
+                Algunas medidas esenciales para garantizar la seguridad en la configuración y mantenimiento de redes son:
+              </p>     
+              <ul>
+                <li>
+                  <strong>Firewalls:</strong> Configurar y mantener firewalls esencial para controlar el tráfico de red, permitiendo o bloqueando el acceso a la red según políticas de seguridad establecidas.
+                </li>
+                <li>
+                  <strong>Autenticación y Autorización:</strong> Implementar mecanismos de autenticación sólidos, como contraseñas seguras y autenticación de dos factores. Asimismo, garantizar que los usuarios tengan los permisos adecuados de acuerdo a sus roles y responsabilidades.
+                </li>
+                <li>
+                  <strong>Actualizaciones y Parches:</strong> Mantener actualizados los sistemas y dispositivos de red con los últimos parches de seguridad es fundamental para protegerse contra vulnerabilidades conocidas.
+                </li>
+                <li>
+                  <strong>Encriptación:</strong> Utilizar protocolos de encriptación seguros para proteger la comunicación entre dispositivos y sistemas, especialmente en conexiones sensibles como transacciones financieras o acceso a datos confidenciales.
+                </li>
+                <li>
+                  <strong>Monitoreo Continuo:</strong> Implementar sistemas de monitoreo de red para detectar y responder rápidamente a posibles incidentes de seguridad, como intrusiones o comportamientos anómalos.
+                </li>
+                <li>
+                  <strong>Backups:</strong> Realizar copias de seguridad periódicas de los datos críticos de la red y almacenarlas de forma segura, permitiendo la recuperación en caso de pérdida de información debido a ataques cibernéticos u otros problemas.
+                </li>
+              </ul> 
+              <p>
+                Es importante mantenerse al tanto de las últimas amenazas y técnicas de seguridad para actualizar y adaptar continuamente las medidas de seguridad de la red en respuesta a las cambiantes amenazas cibernéticas.
+              </p>   
+              <p>
+                En resumen, la seguridad de redes en la configuración y mantenimiento implica la implementación de políticas y medidas efectivas para proteger la red contra amenazas y garantizar un entorno seguro para los datos y la comunicación.
+              </p>
+            </p>          
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+      <img src="/Images/segu.jpg" class="custom-image">
+     </div>
+  
+    <footer>
+        &copy; 2023 Fundamentos de Redes - Todos los derechos reservados
+    </footer>
+
+    <script>
+      // Función para alternar la visibilidad del menú
+      function toggleMenu() {
+             const nav = document.getElementById('nav');
+             nav.style.display = (nav.style.display === 'block' || nav.style.display === '') ? 'none' : 'block';
+         }
+     </script>
+ 
+     <script>
+         let isVideoMinimized = false;
+ 
+         function toggleMinimize() {
+             const videoContainer = document.getElementById('videoContainer');
+             const minimizeButton = document.querySelector('.minimize-button');
+ 
+             if (isVideoMinimized) {
+                 videoContainer.classList.remove('minimized');
+                 minimizeButton.innerText = 'Minimizar';
+             } else {
+                 videoContainer.classList.add('minimized');
+                 minimizeButton.innerText = 'Restaurar';
+             }
+ 
+             isVideoMinimized = !isVideoMinimized;
+ 
+         }
+ 
+         window.addEventListener('scroll', function () {
+             const video = document.querySelector('.video-container video');
+             const videoContainer = document.getElementById('videoContainer');
+             const minimizeButton = document.querySelector('.minimize-button');
+ 
+             const rect = video.getBoundingClientRect();
+ 
+             if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                 if (isVideoMinimized) {
+                     video.play();
+                     isVideoMinimized = false;
+                     videoContainer.classList.remove('minimized');
+                     minimizeButton.innerText = 'Minimizar';
+                 }
+             } else {
+                 if (!isVideoMinimized) {
+                     video.pause();
+                     isVideoMinimized = true;
+                     videoContainer.classList.add('minimized');
+                     minimizeButton.innerText = 'Restaurar';
+                 }
+             }
+         });
+     </script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes en la educacion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(images/Diseño\ sin\ título\ \(5\)_0.jpg) no-repeat center center fixed;
+            background-size: cover;
+            text-align: justify;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: hsl(150, 98%, 52%);
+        }
+
+        h1 {
+            color: #f90202;
+        }
+
+        p {
+            color: #000000;
+        }
+
+        .content h1,
+        .content h2 {
+            color: black;
+            /* Color del texto: negro */
+            text-align: center;
+            /* Centrar texto */
+        }
+        .div{
+            color: #000000;
+        }
+
+        #header {
+            background-color: transparent;
+            /* Fondo semitransparente para mejorar la visibilidad del encabezado */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+       
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.66;
+        }
+
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #fff;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .section p {
+            color: black;
+        }
+
+        .contact {
+            background-color: #34a9db;
+            color: white;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .contact a:hover {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #ec0a0a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+/* Estilos para imágenes */
+.custom-image {
+    width: 80%; /* 80% del ancho de la ventana */
+    max-width: 800px; /* Máximo de 800px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilos para el video */
+.custom-video {
+    width: 100%; /* 100% del ancho de la ventana */
+    max-width: 1000px; /* Máximo de 1000px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+        .minimize-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: none;
+            .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3498db;
+            padding: 10px;
+            color: white;
+        }
+        }
+
+        .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 5px; /* Ajusta el valor del padding según sea necesario */
+        color: rgb(2, 2, 2);
+        }
+
+       .menu-icon {
+       font-size: 24px;
+       cursor:none;
+       padding: 0px; /* Eliminar relleno */
+       margin: 0; /* Eliminar margen */
+       }
+       
+        #nav {
+            display: none;
+            background-color: #48f01a;
+            padding: 0;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav a {
+            display: block;
+            color: rgb(26, 25, 25);
+            text-decoration: none;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #nav a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilos para escritorio */
+        @media (min-width: 768px) {
+            .top {
+                display: block;
+                text-align: center;
+            }
+
+            #nav {
+                display: block;
+                margin-top: 20px;
+            }
+
+            #nav ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            #nav li {
+                margin: 0 10px;
+            }
+        }
+  </style>
+</head>
+<body>
+    <div id="header">
+        <div class="top">
+            <h1>Redes en la educacion</h1>
+            <div id="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰ Menu</div>
+        </div>
+    </div>
+    <nav id="nav">
+        <ul>
+            <a href="index.html">Inicio</a>
+            <a href="#Redes en la educacion">Redes en la educacion</a>
+            <a href="#Tecnologias educativas y redes">Tecnologias educativas y redes</a>
+            <a href="#Conectividad en las aulas">Conectividad en las aulas</a>
+            <a href="#Aprendizaje en linea y redes">Aprendizaje en linea y redes</a>
+        </ul>
+    </nav>
+
+    <div class="content">
+      <div class="section">
+        <h2 id="Redes en la educacion">Redes en la educacion</h2>
+        <p>
+          Las redes en la educación son una herramienta fundamental en la era digital. Estas redes permiten la conexión y comunicación entre estudiantes, profesores y recursos educativos a través de plataformas en línea.
+        </p>
+        <p>
+          Una de las principales ventajas de las redes en la educación es la posibilidad de acceder a un amplio conjunto de materiales educativos en línea. Los estudiantes pueden encontrar información actualizada, investigar temas específicos y acceder a recursos multimedia que complementen su aprendizaje.
+        </p>
+        <p>
+          Además, las redes en la educación fomentan la colaboración y el trabajo en equipo. Los estudiantes pueden conectarse con sus compañeros de clase, compartir ideas, discutir proyectos y realizar trabajos colaborativos utilizando herramientas en línea como foros de discusión, blogs o plataformas de colaboración.
+        </p>      
+        <p>
+          Otra ventaja importante de las redes en la educación es la posibilidad de recibir retroalimentación y apoyo por parte de los profesores. A través de estas redes, los profesores pueden brindar orientación, responder preguntas y evaluar el progreso de los estudiantes de manera más rápida y eficiente.
+        </p>         
+        <p>
+          Sin embargo, es importante tener en cuenta que el uso de las redes en la educación también plantea desafíos y preocupaciones. Es necesario garantizar la seguridad y privacidad de los estudiantes, así como promover un uso responsable y ético de estas herramientas.
+        </p>    
+        <p>
+          En resumen, las redes en la educación ofrecen muchas oportunidades para mejorar el proceso de enseñanza y aprendizaje. Permiten el acceso a información y recursos educativos, fomentan la colaboración y facilitan la comunicación entre estudiantes y profesores. Es importante aprovechar estas herramientas de manera adecuada y consciente para maximizar sus beneficios en el ámbito educativo.
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <video controls class="custom-video">
+          <source src="/video/Concepto de Tecnología Educativa.mp4">
+      </video>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <h2 id="Tecnologias educativas y redes">Tecnologias educativas y redes</h2>
+        <p>
+          La tecnología educativa y las redes son dos elementos que están cada vez más presentes en el ámbito educativo. La tecnología educativa se refiere al uso de herramientas tecnológicas y recursos digitales para mejorar el proceso de enseñanza y aprendizaje. Por otro lado, las redes hacen referencia a las interconexiones entre diferentes dispositivos y usuarios que permiten la comunicación y el intercambio de información.
+        </p>
+        <p>
+          Cuando se combinan la tecnología educativa y las redes, se abren muchas posibilidades para enriquecer la educación. Las redes facilitan el acceso a recursos educativos en línea, permitiendo a los estudiantes explorar una amplia gama de información y materiales de aprendizaje. Además, las redes también fomentan la colaboración y el trabajo en equipo, ya que los estudiantes pueden conectarse con sus compañeros y profesores a través de plataformas educativas en línea.
+        </p> 
+        <p>
+          La tecnología educativa, por su parte, proporciona herramientas interactivas y multimedia que pueden hacer que el aprendizaje sea más dinámico y atractivo. Los estudiantes pueden utilizar aplicaciones, software educativo y recursos digitales para interactuar con los contenidos de manera más práctica y participativa. Esto puede ayudar a mejorar la comprensión y retención de la información.
+        </p>
+        <p>
+          Sin embargo, es importante tener en cuenta que el uso de la tecnología educativa y las redes debe ser adecuado y estar bien integrado en el proceso de enseñanza y aprendizaje. Los docentes deben recibir formación para utilizar estas herramientas de manera efectiva y garantizar que se utilicen de forma segura y responsable. Además, es fundamental considerar la brecha digital y asegurarse de que todos los estudiantes tengan acceso equitativo a estas tecnologías.
+        </p> 
+        <p>
+          En resumen, la combinación de la tecnología educativa y las redes ofrece muchas oportunidades para mejorar la educación. Al utilizar estas herramientas de manera adecuada y responsable, se pueden crear entornos de aprendizaje más dinámicos e interactivos, promoviendo así un mejor desarrollo de los estudiantes.
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <video controls class="custom-video">
+          <source src="/video/La tecnología y la educación.mp4">
+      </video>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <h2 id="Conectividad en las aulas">Conectividad en las aulas</h2>
+        <p>
+          La conectividad en las aulas a través de redes de computadoras es crucial para mejorar la enseñanza y el aprendizaje. Permite acceso a recursos en línea, compartir información y colaborar.
+        </p>   
+        <p>
+          Se pueden implementar redes cableadas para una conexión estable y rápida, especialmente para actividades intensivas de ancho de banda. También se utilizan redes inalámbricas (Wi-Fi) para mayor movilidad, aunque la señal puede variar.
+        </p>   
+        <p>
+          Es esencial establecer políticas de seguridad para proteger la privacidad y los datos.
+        </p> 
+        <p>
+          Es esencial capacitar a los docentes en el uso efectivo de la tecnología educativa para garantizar su utilización segura y responsable, así como considerar la brecha digital para garantizar el acceso equitativo a estas tecnologías por parte de todos los estudiantes.
+        </p>
+        <p>
+          En conjunto, la conectividad en las aulas y la tecnología educativa ofrecen oportunidades significativas para mejorar la educación y crear entornos de aprendizaje más dinámicos e interactivos.
+        </p>   
+        <p>
+          En resumen, la conectividad en las aulas es fundamental para el aprendizaje digital y la colaboración. Es importante elegir la opción más adecuada según las necesidades educativas.
+        </p>
+        <div style="text-align: center;">
+          <img src="/Images/mi.jpg" class="custom-image">
+         </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <h2 id="Aprendizaje en linea y redes">Aprendizaje en linea y redes</h2>
+        <p>
+          El aprendizaje en línea y las redes están estrechamente relacionados en la actualidad. El avance de la tecnología ha permitido que las personas accedan a una gran cantidad de información y recursos educativos a través de internet.
+        </p>   
+        <p>
+          El aprendizaje en línea se refiere a la adquisición de conocimientos o habilidades a través de cursos, programas o materiales educativos que se encuentran disponibles en línea. Esto puede incluir clases virtuales, tutoriales interactivos, videos educativos, foros de discusión y más. El aprendizaje en línea ofrece flexibilidad y comodidad, ya que los estudiantes pueden acceder al contenido desde cualquier lugar y en cualquier momento.
+        </p>  
+        <p>
+          Por otro lado, las redes son fundamentales para el aprendizaje en línea. Las redes permiten la conexión entre estudiantes, profesores y expertos en diferentes campos. A través de las redes sociales y las comunidades en línea, los estudiantes pueden compartir ideas, hacer preguntas, colaborar en proyectos y recibir retroalimentación de sus compañeros y profesores. Además, las redes también facilitan el acceso a recursos adicionales y oportunidades de aprendizaje.
+        </p>
+        <p>
+          En resumen, el aprendizaje en línea y las redes van de la mano en la era digital. Ambos proporcionan oportunidades para el crecimiento y desarrollo personal, así como la posibilidad de conectarse con personas de ideas afines y expertos en el campo de estudio.
+        </p>
+        <p>
+          La interactividad en el aprendizaje en línea es esencial para mantener el interés y la participación de los estudiantes. Los elementos interactivos como cuestionarios, juegos educativos y discusiones en línea fomentan un aprendizaje más dinámico y efectivo.
+        </p> 
+        <p>
+          Las redes sociales y plataformas de colaboración son herramientas clave en el aprendizaje en línea. Los grupos y comunidades en línea permiten a los estudiantes interactuar, discutir ideas y compartir recursos relacionados con su área de estudio.
+        </p>
+        <p>
+          La personalización del aprendizaje es posible a través de la adaptación de contenidos y actividades según las necesidades y habilidades de cada estudiante. Las plataformas en línea pueden ofrecer rutas de aprendizaje personalizadas y recomendaciones basadas en el desempeño y preferencias de cada usuario.
+        </p>  
+        <p>
+          El aprendizaje en línea fomenta habilidades digitales y tecnológicas, que son cada vez más relevantes en el mundo laboral actual. Los estudiantes adquieren experiencia en el uso de herramientas digitales y plataformas colaborativas, mejorando así su empleabilidad.
+        </p>   
+        <p>
+          Es importante establecer una comunidad de aprendizaje en línea donde los estudiantes se sientan parte de un grupo, promoviendo la participación activa y el apoyo mutuo. La retroalimentación constructiva entre pares es valiosa para el crecimiento académico.
+        </p>  
+        <p>
+          En resumen, el aprendizaje en línea y las redes brindan oportunidades para la interactividad, la personalización, el desarrollo de habilidades digitales y la formación de comunidades de aprendizaje. Estos elementos en conjunto enriquecen la experiencia educativa en la era digital.
+        </p>
+      </p> 
+      <div style="text-align: center;">
+        <img src="/Images/24.jpg" class="custom-image" >
+       </div>  
+    </div>
+    </div> 
+   
+    <footer>
+      &copy; 2023 Fundamentos de Redes - Todos los derechos reservados
+  </footer>
+
+  <script>
+    // Función para alternar la visibilidad del menú
+    function toggleMenu() {
+           const nav = document.getElementById('nav');
+           nav.style.display = (nav.style.display === 'block' || nav.style.display === '') ? 'none' : 'block';
+       }
+   </script>
+
+   <script>
+       let isVideoMinimized = false;
+
+       function toggleMinimize() {
+           const videoContainer = document.getElementById('videoContainer');
+           const minimizeButton = document.querySelector('.minimize-button');
+
+           if (isVideoMinimized) {
+               videoContainer.classList.remove('minimized');
+               minimizeButton.innerText = 'Minimizar';
+           } else {
+               videoContainer.classList.add('minimized');
+               minimizeButton.innerText = 'Restaurar';
+           }
+
+           isVideoMinimized = !isVideoMinimized;
+
+       }
+
+       window.addEventListener('scroll', function () {
+           const video = document.querySelector('.video-container video');
+           const videoContainer = document.getElementById('videoContainer');
+           const minimizeButton = document.querySelector('.minimize-button');
+
+           const rect = video.getBoundingClientRect();
+
+           if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+               if (isVideoMinimized) {
+                   video.play();
+                   isVideoMinimized = false;
+                   videoContainer.classList.remove('minimized');
+                   minimizeButton.innerText = 'Minimizar';
+               }
+           } else {
+               if (!isVideoMinimized) {
+                   video.pause();
+                   isVideoMinimized = true;
+                   videoContainer.classList.add('minimized');
+                   minimizeButton.innerText = 'Restaurar';
+               }
+           }
+       });
+      </script>
+</body>
+</html>

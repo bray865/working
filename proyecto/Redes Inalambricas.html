@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Inalambricas</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url(images/paises-internet-barato.jpg) no-repeat center center fixed;
+        background-size: cover;
+        text-align: justify;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: hsl(150, 98%, 52%);
+    }
+
+    h1 {
+        color: #f90202;
+    }
+
+    p {
+        color: #000000;
+    }
+
+    .content h1,
+    .content h2 {
+        color: black;
+        /* Color del texto: negro */
+        text-align: center;
+        /* Centrar texto */
+    }
+    .div{
+        color: #000000;
+    }
+
+    #header {
+        background-color: transparent;
+        /* Fondo semitransparente para mejorar la visibilidad del encabezado */
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+   
+    .content {
+        padding: 20px;
+        margin: 20px;
+        background-color: transparent;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        line-height: 1.66;
+    }
+
+    .section {
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    .section h2 {
+        color: #333;
+    }
+
+    .section p {
+        color: black;
+    }
+
+    .contact {
+        background-color: #34a9db;
+        color: white;
+    }
+
+    .contact a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    .contact a:hover {
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #ec0a0a;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+/* Estilos para imágenes */
+.custom-image {
+    width: 80%; /* 80% del ancho de la ventana */
+    max-width: 800px; /* Máximo de 800px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilos para el video */
+.custom-video {
+    width: 100%; /* 100% del ancho de la ventana */
+    max-width: 1000px; /* Máximo de 1000px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+    .minimize-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: none;
+        .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3498db;
+        padding: 10px;
+        color: white;
+    }
+    }
+
+    .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px; /* Ajusta el valor del padding según sea necesario */
+    color: rgb(2, 2, 2);
+    }
+
+   .menu-icon {
+   font-size: 24px;
+   cursor:none;
+   padding: 0px; /* Eliminar relleno */
+   margin: 0; /* Eliminar margen */
+   }
+   
+    #nav {
+        display: none;
+        background-color: #48f01a;
+        padding: 0;
+    }
+
+    #nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav a {
+        display: block;
+        color: rgb(26, 25, 25);
+        text-decoration: none;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #nav a:hover {
+        background-color: #2980b9;
+    }
+
+    /* Estilos para escritorio */
+    @media (min-width: 768px) {
+        .top {
+            display: block;
+            text-align: center;
+        }
+
+        #nav {
+            display: block;
+            margin-top: 20px;
+        }
+
+        #nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav li {
+            margin: 0 10px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="top">
+            <h1>Redes de computadoras</h1>
+            <div id="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰ Menu</div>
+        </div>
+    </div>
+    <nav id="nav">
+        <ul>
+            <a href="index.html">Inicio</a>
+            <a href="#Wifi y estandares">Wifi y estandares</a>
+            <a href="#Seguridad de wifi">Seguridad de wifi</a>
+            <a href="#Solución de problemas de wifi">Solución de problemas de wifi</a>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="section">
+        <h2 id="Wifi y estandares">Wifi y estandares</h2>
+        <p>Los estándares de Wi-Fi son especificaciones técnicas que definen cómo funcionan las redes inalámbricas. Estos estándares son desarrollados y mantenidos por el Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) y se conocen como las normas IEEE 802.11.</p>
+        <p>Algunos de los estándares más comunes de Wi-Fi son:</p>
+        <ul>
+            <li><strong>IEEE 802.11b:</strong> Introducido en 1999, opera en la banda de frecuencia de 2.4 GHz y proporciona una velocidad máxima de hasta 11 Mbps.</li>
+            <li><strong>IEEE 802.11a:</strong> También introducido en 1999, opera en la banda de frecuencia de 5 GHz y ofrece una velocidad máxima de hasta 54 Mbps.</li>
+            <li><strong>IEEE 802.11g:</strong> Lanzado en 2003, es compatible con el estándar 802.11b pero ofrece una velocidad máxima de hasta 54 Mbps en la banda de frecuencia de 2.4 GHz.</li>
+            <li><strong>IEEE 802.11n:</strong> Introducido en 2009, es compatible con los estándares anteriores y utiliza tecnologías como MIMO (Multiple Input Multiple Output) para mejorar el rendimiento y la cobertura. Puede proporcionar velocidades de hasta 600 Mbps.</li>
+            <li><strong>IEEE 802.11ac:</strong> Lanzado en 2013, opera en la banda de frecuencia de 5 GHz y ofrece velocidades mucho más altas que los estándares anteriores. Puede proporcionar velocidades de hasta varios gigabits por segundo.</li>
+            <li><strong>IEEE 802.11ax (Wi-Fi 6):</strong> Es el estándar más reciente, lanzado en 2019. Mejora la eficiencia y el rendimiento en entornos de alta densidad de dispositivos y ofrece velocidades aún más altas que el estándar 802.11ac.</li>
+        </ul>
+        <p>Estos estándares son retro compatibles, lo que significa que los dispositivos más nuevos pueden conectarse a redes Wi-Fi más antiguas, pero es importante tener en cuenta que la velocidad y el rendimiento se verán limitados por el estándar más antiguo utilizado en la red.</p>
+        <div style="text-align: center;">
+            <img src="/Images/tipos-de-redes.jpg" class="custom-image" >
+           </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+        <h2 id="Seguridad de wifi">Seguridad de wifi</h2>
+        <p>La seguridad del Wi-Fi en las redes de computadoras es de suma importancia para proteger tus datos y mantener tu red segura. Aquí hay algunas medidas que puedes tomar para mejorar la seguridad de tu red Wi-Fi:</p>
+        <ul>
+            <li><strong>Cambiar el nombre de la red (SSID):</strong> Evita usar nombres de red preestablecidos o fáciles de adivinar. Utiliza un nombre único que no revele información personal.</li>
+            <li><strong>Establecer una contraseña segura:</strong> Utiliza una contraseña robusta y única para tu red Wi-Fi. Debe contener una combinación de letras (mayúsculas y minúsculas), números y caracteres especiales. Evita utilizar contraseñas comunes o predecibles.</li>
+            <li><strong>Usar cifrado WPA2 o WPA3:</strong> Configura tu red Wi-Fi para utilizar cifrado de seguridad WPA2 o, preferiblemente, WPA3. Estos protocolos ofrecen una mayor seguridad en comparación con los antiguos estándares WEP o WPA.</li>
+            <li><strong>Filtrado de direcciones MAC:</strong> Activa la función de filtrado de direcciones MAC en tu enrutador Wi-Fi. Esta medida permite que solo los dispositivos cuyas direcciones MAC estén en la lista permitida puedan conectarse a la red.</li>
+            <li><strong>Desactivar la difusión del SSID:</strong> Puedes ocultar la transmisión del nombre de tu red Wi-Fi para evitar que aparezca en la lista de redes disponibles. Sin embargo, ten en cuenta que esta medida no proporciona una seguridad completa y puede dificultar la conexión de nuevos dispositivos.</li>
+            <li><strong>Actualizar regularmente el firmware del enrutador:</strong> Mantén tu enrutador actualizado con las últimas actualizaciones de firmware. Estas actualizaciones suelen incluir mejoras de seguridad y correcciones de vulnerabilidades.</li>
+            <li><strong>Configurar una red de invitados separada:</strong> Si tienes invitados que necesitan acceso a tu red Wi-Fi, considera configurar una red de invitados separada. Esto mantendrá tus dispositivos personales a salvo, ya que la red de invitados tendrá un acceso restringido a los recursos de tu red principal.</li>
+        </ul>
+        <p>Recuerda que la seguridad de tu red Wi-Fi es fundamental para proteger tus datos y mantener tu privacidad. Siguiendo estas prácticas de seguridad, podrás reducir el riesgo de intrusiones no autorizadas en tu red.</p>
+        <div style="text-align: center;">
+            <img src="/Images/dia-mundial-internetd.jpg" class="custom-image" >
+           </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="content">
+        <div class="section">
+        <h2 id="Solución de problemas de wifi">Solución de problemas de wifi</h2>
+        <p>Para solucionar problemas de WiFi en redes de computadoras, puedes seguir estos pasos:</p>
+        <ul>
+            <li><strong>Reinicia el router y el dispositivo:</strong> A veces, reiniciar tanto el router como el dispositivo que intenta conectarse puede resolver problemas de conexión.</li>
+            <li><strong>Verifica la configuración del router:</strong> Asegúrate de que el router esté configurado correctamente. Verifica que el nombre de red (SSID) y la contraseña sean correctos.</li>
+            <li><strong>Comprueba la intensidad de la señal:</strong> Si la señal WiFi es débil, es posible que experimentes problemas de conexión. Intenta acercarte al router o colocarlo en una ubicación central para mejorar la intensidad de la señal.</li>
+            <li><strong>Verifica los dispositivos cercanos:</strong> Otros dispositivos electrónicos, como teléfonos inalámbricos, microondas o incluso otros routers WiFi cercanos, pueden causar interferencias en la señal WiFi. Aleja estos dispositivos de tu router o cambia el canal de tu red WiFi para evitar interferencias.</li>
+            <li><strong>Actualiza el firmware del router:</strong> Asegúrate de que tu router tenga el firmware más reciente instalado. Los fabricantes a menudo lanzan actualizaciones que corrigen problemas de conexión y mejoran el rendimiento.</li>
+            <li><strong>Verifica la configuración de seguridad:</strong> Asegúrate de que la configuración de seguridad de tu red WiFi sea la adecuada. Utiliza una contraseña segura y considera habilitar la autenticación WPA2 o WPA3 para mayor seguridad.</li>
+            <li><strong>Reinicia los adaptadores de red:</strong> Si estás experimentando problemas de conexión en un dispositivo específico, intenta reiniciar su adaptador de red. Puedes hacerlo deshabilitando y luego habilitando la conexión WiFi en la configuración del dispositivo.</li>
+        </ul>
+        <div style="text-align: center;">
+            <img src="/Images/sdf.jpg" class="custom-image" >
+           </div>
+    </div>
+    </div>
+ 
+    <footer>
+        Derechos de autor © 2023 Redes de Computadoras
+    </footer>
+
+    <script>
+        // Función para alternar la visibilidad del menú
+        function toggleMenu() {
+               const nav = document.getElementById('nav');
+               nav.style.display = (nav.style.display === 'block' || nav.style.display === '') ? 'none' : 'block';
+           }
+       </script>
+   
+       <script>
+           let isVideoMinimized = false;
+   
+           function toggleMinimize() {
+               const videoContainer = document.getElementById('videoContainer');
+               const minimizeButton = document.querySelector('.minimize-button');
+   
+               if (isVideoMinimized) {
+                   videoContainer.classList.remove('minimized');
+                   minimizeButton.innerText = 'Minimizar';
+               } else {
+                   videoContainer.classList.add('minimized');
+                   minimizeButton.innerText = 'Restaurar';
+               }
+   
+               isVideoMinimized = !isVideoMinimized;
+   
+           }
+   
+           window.addEventListener('scroll', function () {
+               const video = document.querySelector('.video-container video');
+               const videoContainer = document.getElementById('videoContainer');
+               const minimizeButton = document.querySelector('.minimize-button');
+   
+               const rect = video.getBoundingClientRect();
+   
+               if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                   if (isVideoMinimized) {
+                       video.play();
+                       isVideoMinimized = false;
+                       videoContainer.classList.remove('minimized');
+                       minimizeButton.innerText = 'Minimizar';
+                   }
+               } else {
+                   if (!isVideoMinimized) {
+                       video.pause();
+                       isVideoMinimized = true;
+                       videoContainer.classList.add('minimized');
+                       minimizeButton.innerText = 'Restaurar';
+                   }
+               }
+           });
+       </script>
+   </body>
+</html>
+
+        

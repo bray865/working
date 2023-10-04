@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Empresariales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(images/cisco.jpg) no-repeat center center fixed;
+            background-size: cover;
+            text-align: justify;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: hsl(150, 98%, 52%);
+        }
+
+        h1 {
+            color: #f90202;
+        }
+
+        p {
+            color: #000000;
+        }
+
+        .content h1,
+        .content h2 {
+            color: black;
+            /* Color del texto: negro */
+            text-align: center;
+            /* Centrar texto */
+        }
+        .div{
+            color: #000000;
+        }
+
+        #header {
+            background-color: transparent;
+            /* Fondo semitransparente para mejorar la visibilidad del encabezado */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+       
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.66;
+        }
+
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #fff;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .section p {
+            color: black;
+        }
+
+        .contact {
+            background-color: #34a9db;
+            color: white;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .contact a:hover {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #ec0a0a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+/* Estilos para imágenes */
+.custom-image {
+    width: 80%; /* 80% del ancho de la ventana */
+    max-width: 800px; /* Máximo de 800px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+/* Estilos para el video */
+.custom-video {
+    width: 100%; /* 100% del ancho de la ventana */
+    max-width: 1000px; /* Máximo de 1000px */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+        .minimize-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: none;
+            .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3498db;
+            padding: 10px;
+            color: white;
+        }
+        }
+
+        .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 5px; /* Ajusta el valor del padding según sea necesario */
+        color: rgb(2, 2, 2);
+        }
+
+       .menu-icon {
+       font-size: 24px;
+       cursor:none;
+       padding: 0px; /* Eliminar relleno */
+       margin: 0; /* Eliminar margen */
+       }
+       
+        #nav {
+            display: none;
+            background-color: #48f01a;
+            padding: 0;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav a {
+            display: block;
+            color: rgb(26, 25, 25);
+            text-decoration: none;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #nav a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilos para escritorio */
+        @media (min-width: 768px) {
+            .top {
+                display: block;
+                text-align: center;
+            }
+
+            #nav {
+                display: block;
+                margin-top: 20px;
+            }
+
+            #nav ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            #nav li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="top">
+            <h1>Redes empresariales</h1>
+            <div id="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰ Menu</div>
+        </div>
+    </div>
+    <nav id="nav">
+        <ul>
+            <a href="index.html">Inicio</a>
+            <a href="#Redes Empresariales">Redes Empresariales</a>
+            <a href="#Redes LAN empresariales">Redes LAN empresariales</a>
+            <a href="#Seguridad en redes empresariales">Seguridad en redes empresariales</a>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="section">
+        <h2 id="Redes Empresariales">Redes Empresariales</h2>
+        <p>Las redes empresariales son sistemas de comunicación que conectan diversos dispositivos y recursos dentro de una organización. Estas redes permiten el intercambio de información, la colaboración entre empleados y el acceso a recursos compartidos, como archivos y aplicaciones.</p>
+        <p>Estas redes pueden ser cableadas o inalámbricas, y su tamaño y complejidad pueden variar según las necesidades de la empresa. Algunos ejemplos de redes empresariales incluyen redes de área local (LAN), redes de área extensa (WAN) e intranets corporativas.</p>
+        <p>La implementación de una red empresarial proporciona numerosos beneficios, como una mayor eficiencia en la comunicación y la colaboración, una mejor gestión de los recursos informáticos y una mayor seguridad de la información. Además, permiten la integración de diferentes sistemas y aplicaciones, facilitando el flujo de trabajo y mejorando la productividad.</p>
+        <p>Es fundamental contar con profesionales especializados en redes empresariales para diseñar, implementar y mantener estas infraestructuras. Esto garantiza un funcionamiento óptimo de la red, así como una adecuada seguridad y protección de los datos empresariales.</p>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <video controls class="custom-video">
+            <source src="/video/Redes empresariales y asociaciones.mp4">
+        </video>
+    </div>
+
+    <div class="content">
+        <div class="section">
+        <h2 id="Redes LAN empresariales">Redes LAN empresariales</h2>
+        <ul>
+            <li>
+                <p><strong>Redes LAN Empresariales:</strong> Son sistemas de interconexión de dispositivos informáticos dentro de una empresa u organización. Se utilizan para compartir recursos, como archivos, impresoras y conexiones a Internet, entre los usuarios de la empresa.</p>
+            </li>
+            <li>
+                <p><strong>Gestión y Configuración:</strong> Estas redes suelen ser gestionadas por un administrador de red, quien se encarga de configurar, mantener y asegurar el buen funcionamiento de la red. Pueden ser cableadas, utilizando cables Ethernet, o inalámbricas, utilizando tecnologías como Wi-Fi.</p>
+            </li>
+            <li>
+                <p><strong>Componentes de una Red LAN Empresarial:</strong> Incluyen servidores, switches, routers, firewalls y puntos de acceso inalámbricos. Los servidores almacenan y comparten recursos, como archivos y aplicaciones. Los switches permiten la conexión de múltiples dispositivos, los routers dirigen el tráfico entre diferentes redes, los firewalls protegen contra amenazas externas y los puntos de acceso inalámbricos permiten la conexión de dispositivos móviles a la red.</p>
+            </li>
+            <li>
+                <p><strong>Comunicación y Acceso a Internet:</strong> Además de compartir recursos, estas redes permiten la comunicación entre los usuarios a través de servicios como el correo electrónico, la mensajería instantánea y la videoconferencia. También pueden ofrecer acceso a Internet a través de un proveedor de servicios de Internet (ISP), permitiendo a los usuarios navegar por la web y acceder a servicios en línea.</p>
+            </li>
+            <li>
+                <p><strong>Importancia:</strong> En resumen, las redes LAN empresariales son fundamentales para el funcionamiento eficiente de una empresa u organización, ya que permiten la compartición de recursos y la comunicación entre los usuarios de la red.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><strong>Escalabilidad:</strong> Las redes LAN empresariales deben ser escalables para adaptarse al crecimiento y las necesidades cambiantes de la organización. Deben poder ampliarse para incluir más dispositivos, usuarios y servicios a medida que la empresa se expande.</p>
+            </li>
+            <li>
+                <p><strong>Seguridad de Datos:</strong> La seguridad de los datos es de suma importancia en las redes LAN empresariales. Se deben implementar medidas de seguridad, como firewalls, encriptación y controles de acceso, para proteger la información confidencial de la empresa contra accesos no autorizados y posibles amenazas.</p>
+            </li>
+            <li>
+                <p><strong>Respaldo y Recuperación:</strong> Es crucial contar con planes de respaldo y recuperación de datos efectivos en caso de fallas o pérdida de información. Esto garantiza que la empresa pueda recuperarse rápidamente y minimizar la interrupción en caso de desastres o incidentes.</p>
+            </li>
+            <li>
+                <p><strong>Optimización del Rendimiento:</strong> Es esencial monitorear y optimizar el rendimiento de la red para asegurar que funcione de manera eficiente y proporcione velocidades adecuadas de transferencia de datos y acceso a los recursos. Esto se logra mediante la administración efectiva de la red y la resolución rápida de problemas.</p>
+            </li>
+            <li>
+                <p><strong>Compatibilidad y Estándares:</strong> La adhesión a estándares de la industria es clave para garantizar la compatibilidad y la interoperabilidad entre diferentes componentes de la red. Cumplir con los estándares también facilita la integración de nuevos dispositivos y tecnologías en la red existente.</p>
+            </li>
+        </ul>
+        <div style="text-align: center;">
+            <img src="/Images/re.jpg" class="custom-image" >
+           </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2 id="Seguridad en redes empresariales">Seguridad en redes empresariales</h2>
+            <p>La seguridad en redes empresariales es una preocupación fundamental para cualquier organización. Aquí hay algunas medidas importantes que se pueden tomar para garantizar la seguridad de una red empresarial:</p>
+
+            <ul>
+                <li>
+                    <p><strong>Implementar un firewall:</strong> Un firewall actúa como una barrera entre la red interna y el mundo exterior, controlando y filtrando el tráfico entrante y saliente. Ayuda a prevenir ataques no autorizados y protege los datos sensibles de la empresa.</p>
+                </li>
+                <li>
+                    <p><strong>Utilizar cifrado:</strong> Es importante utilizar protocolos de cifrado seguros, como SSL/TLS, para proteger la comunicación en línea. Esto asegura que los datos transmitidos estén encriptados y no puedan ser interceptados fácilmente por terceros malintencionados.</p>
+                </li>
+                <li>
+                    <p><strong>Establecer políticas de acceso:</strong> Es recomendable implementar políticas de acceso fuertes y restringir el acceso a la red empresarial solo a usuarios autorizados. Esto se puede lograr mediante la implementación de autenticación de dos factores, contraseñas seguras y limitación de privilegios.</p>
+                </li>
+                <li>
+                    <p><strong>Mantener el software actualizado:</strong> Es importante mantener todos los dispositivos y software en la red empresarial actualizados con las últimas actualizaciones de seguridad. Las actualizaciones a menudo incluyen parches y correcciones para vulnerabilidades conocidas, por lo que es esencial mantenerse al día con ellas.</p>
+                </li>
+                <li>
+                    <p><strong>Realizar copias de seguridad regulares:</strong> Realizar copias de seguridad periódicas de los datos críticos de la empresa es fundamental para garantizar su disponibilidad en caso de una violación de seguridad o pérdida de datos. Esto puede ayudar a minimizar el impacto de un incidente de seguridad y facilitar la recuperación.</p>
+                </li>
+                <li>
+                    <p><strong>Formación en seguridad:</strong> Educar y capacitar a los empleados sobre las mejores prácticas de seguridad en redes es esencial. Esto incluye enseñarles a reconocer correos electrónicos de phishing, evitar hacer clic en enlaces sospechosos y usar contraseñas seguras.</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p><strong>Gestión de Vulnerabilidades:</strong> Realiza evaluaciones periódicas de vulnerabilidades en la red para identificar posibles puntos de entrada para atacantes. Luego, aplica parches y soluciones para abordar estas vulnerabilidades y mitigar posibles riesgos de seguridad.</p>
+                </li>
+                <li>
+                    <p><strong>Monitorización y Detección de Intrusiones:</strong> Implementa sistemas de monitorización y detección de intrusiones para identificar actividad inusual en la red. Estos sistemas alertan sobre posibles intentos de acceso no autorizado o comportamientos maliciosos.</p>
+                </li>
+                <li>
+                    <p><strong>Control de Acceso a Nivel de Usuario:</strong> Establece políticas de acceso a nivel de usuario para garantizar que cada empleado tenga acceso solo a los recursos necesarios para su función. Limita los privilegios a aquellos esenciales para evitar accesos indebidos a sistemas críticos.</p>
+                </li>
+                <li>
+                    <p><strong>Auditorías de Seguridad:</strong> Realiza auditorías periódicas de seguridad para evaluar el cumplimiento de las políticas de seguridad, identificar áreas de mejora y garantizar que los controles de seguridad estén implementados y funcionando de manera efectiva.</p>
+                </li>
+                <li>
+                    <p><strong>Respuesta a Incidentes:</strong> Desarrolla y practica planes de respuesta a incidentes que establezcan los pasos a seguir en caso de una violación de seguridad. Esto garantiza una respuesta rápida y eficiente para minimizar el impacto y mitigar cualquier daño.</p>
+                </li>
+            </ul>
+            <p>Recuerda que la seguridad en redes empresariales es un proceso continuo y en constante evolución. Es importante estar al tanto de las últimas amenazas y tecnologías de seguridad para mantener la red empresarial protegida en todo momento.</p>
+            <div style="text-align: center;">
+                <img src="/Images/ce.jpg" class="custom-image" >
+               </div>
+        </div>
+    </div>
+ 
+    <footer>
+        &copy; 2023 Fundamentos de Redes - Todos los derechos reservados
+    </footer>
+
+    <script>
+        // Función para alternar la visibilidad del menú
+        function toggleMenu() {
+               const nav = document.getElementById('nav');
+               nav.style.display = (nav.style.display === 'block' || nav.style.display === '') ? 'none' : 'block';
+           }
+       </script>
+   
+       <script>
+           let isVideoMinimized = false;
+   
+           function toggleMinimize() {
+               const videoContainer = document.getElementById('videoContainer');
+               const minimizeButton = document.querySelector('.minimize-button');
+   
+               if (isVideoMinimized) {
+                   videoContainer.classList.remove('minimized');
+                   minimizeButton.innerText = 'Minimizar';
+               } else {
+                   videoContainer.classList.add('minimized');
+                   minimizeButton.innerText = 'Restaurar';
+               }
+   
+               isVideoMinimized = !isVideoMinimized;
+   
+           }
+   
+           window.addEventListener('scroll', function () {
+               const video = document.querySelector('.video-container video');
+               const videoContainer = document.getElementById('videoContainer');
+               const minimizeButton = document.querySelector('.minimize-button');
+   
+               const rect = video.getBoundingClientRect();
+   
+               if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                   if (isVideoMinimized) {
+                       video.play();
+                       isVideoMinimized = false;
+                       videoContainer.classList.remove('minimized');
+                       minimizeButton.innerText = 'Minimizar';
+                   }
+               } else {
+                   if (!isVideoMinimized) {
+                       video.pause();
+                       isVideoMinimized = true;
+                       videoContainer.classList.add('minimized');
+                       minimizeButton.innerText = 'Restaurar';
+                   }
+               }
+           });
+       </script>
+</body>
+</html>
